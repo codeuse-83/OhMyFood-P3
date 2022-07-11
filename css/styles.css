@@ -1,0 +1,150 @@
+a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  h1 {
+    font-family: "shrikhand";
+    font-size: 2.8rem;
+    font-weight: 100;
+    margin: 0;
+  }
+  
+  h2 {
+    font-size: 2.2rem;
+  }
+  
+  h3 {
+    font-size: 1.8rem;
+  }
+  
+  h2::first-letter,
+  h3::first-letter,
+  span::first-letter,
+  p::first-letter {
+    text-transform: capitalize;
+  }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "roboto-regular";
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@font-face {
+    font-family: "roboto-regular";
+    src: url("../assets/font/roboto/Roboto-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "shrikhand";
+    src: url("../assets/font/shrikhand/shrikhand.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  button {
+    width: fit-content;
+    padding: 1.6rem 2.2rem;
+    background: linear-gradient(to top left, #9356dc, #ff79da);
+    border-radius: 3rem;
+    border-style: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    font-size: 1.6rem;
+    color: white;
+    transition: box-shadow 250ms, filter 250ms;
+  }
+  button:hover {
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35);
+    filter: brightness(105%);
+  }
+  
+  .fa-heart {
+    font-size: 2.8rem;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .fa-heart::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "\f004";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    background-image: linear-gradient(#ff79da, #9356dc);
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity ease-in-out 600ms, filter ease-in-out 500ms, transform ease-in-out 300ms;
+  }
+  
+  .fa-heart:hover::after {
+    opacity: 1;
+    filter: brightness(110%);
+    transform: scale(1);
+  }
+  
+  .homePage__header {
+    text-align: center;
+    margin-top: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .location {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .location > p {
+    font-weight: bold;
+    color: #353535;
+    width: 100%;
+    padding: 1.5rem 0;
+    background: #e3e3e3;
+    box-shadow: inset 0rem 0.3rem 0.4rem 0.1rem rgba(0, 0, 0, 0.1);
+  }
+  .location > p > i {
+    padding-right: 1.5rem;
+  }
+  
+  .information {
+    display: flex;
+    flex-direction: column;
+    background: #f6f6f6;
+  }
+  .information > h2 {
+    margin-top: 3.8rem;
+  }
+  .information > p {
+    font-size: 1.8rem;
+    margin-top: 2.2rem;
+    padding: 0 3rem;
+  }
+  .information > button {
+    align-self: center;
+    margin-top: 3.4rem;
+    margin-bottom: 5rem;
+  }
+  
