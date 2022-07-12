@@ -1,3 +1,26 @@
+@keyframes loader-background {
+  0% {
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0deg, 0%, 100%, 0.9);
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0deg, 0%, 100%, 0.9);
+  }
+}
+@keyframes roll-in {
+  0% {
+    transform: scale(0) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
 
 *,
 *::after,
@@ -285,6 +308,40 @@ body {
     }
   }
   
+  .restaurants {
+    background: #f6f6f6;
+    padding: 5.8rem 2.2rem;
+  }
+  .restaurants > h2 {
+    margin-bottom: 2.2rem;
+  }
+  @media screen and (min-width: 768px) {
+    .restaurants {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    .restaurants {
+      border-top-right-radius: 3rem;
+      border-top-left-radius: 3rem;
+    }
+  }
+  
+  .restaurantsCards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 250px);
+    gap: 2rem;
+  }
+  @media screen and (min-width: 768px) {
+    .restaurantsCards {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 250px);
+      gap: 4rem;
+    }
+  }
+  
   .restaurantCard {
     overflow: hidden;
     position: relative;
@@ -346,6 +403,9 @@ body {
     width: 100%;
     height: 100%;
   }
+  
+
+
 
   
 
