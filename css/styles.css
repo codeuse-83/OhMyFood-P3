@@ -147,7 +147,6 @@ body {
     margin-top: 3.4rem;
     margin-bottom: 5rem;
   }
-  
   .instruction {
     width: 90%;
     margin-top: 4.8rem;
@@ -175,3 +174,46 @@ body {
       gap: 5rem;
     }
   }
+  
+  .instructionCard {
+    display: flex;
+    align-items: center;
+    padding: 2.4rem;
+    border-radius: 2.4rem;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    background: #f6f6f6;
+  }
+  .instructionCard:hover {
+    cursor: pointer;
+    background-color: rgba(146, 86, 220, 0.1294117647);
+  }
+  .instructionCard:hover > i {
+    color: #9356dc;
+  }
+  .instructionCard__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 3.5rem;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    color: #f6f6f6;
+    background: #9356dc;
+  }
+  .instructionCard > i {
+    position: relative;
+    right: 2rem;
+    color: grey;
+  }
+  .instructionCard > p {
+    font-weight: bold;
+  }
+  @media screen and (min-width: 768px) {
+    .instructionCard {
+      width: 100%;
+    }
+  }
+  
+  
