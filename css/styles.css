@@ -148,3 +148,30 @@ body {
     margin-bottom: 5rem;
   }
   
+  .instruction {
+    width: 90%;
+    margin-top: 4.8rem;
+    margin-bottom: 6.6rem;
+  }
+  .instruction > h2 {
+    margin-bottom: 3rem;
+  }
+  @media screen and (min-width: 1440px) {
+    .instruction {
+      max-width: 1360px;
+    }
+  }
+  
+  .instructionCards {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  @media screen and (min-width: 768px) {
+    .instructionCards {
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      gap: 5rem;
+    }
+  }
