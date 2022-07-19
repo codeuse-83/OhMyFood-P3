@@ -575,11 +575,16 @@ body {
   .course > h3::after {
     content: "";
     display: block;
-    width: 45px;
+    width: 30px;
     height: 3px;
     background: #99e2d0;
     margin-top: 0.5rem;
   }
+
+  
+
+ 
+
 
   
   
