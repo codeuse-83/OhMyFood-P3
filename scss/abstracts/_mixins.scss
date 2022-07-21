@@ -1,0 +1,26 @@
+//media queries
+@mixin small {
+    @media screen and (min-width: map-get($breakpoints, small)) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media screen and (min-width: map-get($breakpoints, medium)) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media screen and (min-width: map-get($breakpoints, large)) {
+        @content;
+    }
+}
+
+// loading bar
+@mixin loadingBar ($color) {
+    width: 50px;
+    height: 100px;
+    border-radius: 5rem;
+    background: $color;
+}

@@ -1,44 +1,44 @@
 footer {
-    width: 100%;
-    background: $dark-grey;
+  width: 100%;
+  background: $dark-grey;
+  color: white;
+  padding: 2.2rem;
+  > p {
+    font-family: 'shrikhand';
+    font-size: 1.8rem;
+  }
+  > ul {
+    margin-top: 2.2rem;
+  }
+  li {
+    margin: 0.8rem 0;
+  }
+  i {
+    font-size: 1.2rem;
+  }
+  .fa-utensils {
+    margin-right: 1.4rem;
+  }
+  .fa-handshake-angle {
+    margin-right: 0.9rem;
+  }
+  a {
     color: white;
-    padding: 2.2rem;
-    > p {
-      font-family: 'shrikhand';
-      font-size: 1.8rem;
-    }
-    > ul {
-      margin-top: 2.2rem;
-    }
-    li {
-      margin: 0.8rem 0;
-    }
-    i {
-      font-size: 1.2rem;
-    }
-    .fa-utensils {
-      margin-right: 1.4rem;
-    }
-    .fa-handshake-angle {
-      margin-right: 0.9rem;
-    }
+  }
+  li:hover {
+    color: $secondary-color;
     a {
-      color: white;
-    }
-    li:hover {
       color: $secondary-color;
-      a {
-        color: $secondary-color;
-      }
-    }
-    @include large {
-      p,
-      ul {
-        width: 1440px;
-        margin: auto;
-      }
-      ul {
-        margin-top: 2.2rem;
-      }
     }
   }
+  @include large {
+    p,
+    ul {
+      width: 1440px;
+      margin: auto;
+    }
+    ul {
+      margin-top: 2.2rem;
+    }
+  }
+}

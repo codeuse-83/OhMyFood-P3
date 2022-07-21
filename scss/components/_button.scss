@@ -1,0 +1,21 @@
+button {
+    width: fit-content;
+  
+    padding: 1.6rem 2.2rem;
+  
+    background: linear-gradient(to top left, $secondary-color, $primary-color);
+  
+    border-radius: 3rem;
+    border-style: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  
+    font-size: 1.6rem;
+    color: white;
+  
+    transition: box-shadow 250ms, filter 250ms;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35);
+      filter: brightness(105%);
+    }
+  }

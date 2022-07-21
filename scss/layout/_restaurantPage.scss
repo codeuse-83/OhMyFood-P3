@@ -1,185 +1,184 @@
 // ___ HEADER ___ //
 .restaurantPage__header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1.2rem 0;
-    > a {
-      position: absolute;
-      left: 2.2rem;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.2rem 0;
+  > a {
+    position: absolute;
+    left: 2.2rem;
   }
-  
-  // ___ ARTICLE RESTAURANT ___ //
-  .restaurantPage__img {
+}
+
+// ___ ARTICLE RESTAURANT ___ //
+.restaurantPage__img {
+  width: 100%;
+  height: 260px;
+  img {
+    object-fit: cover;
     width: 100%;
-    height: 260px;
-    img {
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-    }
+    height: 100%;
   }
-  .menu__header {
-    position: relative;
-    margin-top: -5.4rem;
-  
+}
+.menu__header {
+  position: relative;
+  margin-top: -5.4rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top-right-radius: 4rem;
+  border-top-left-radius: 4rem;
+
+  padding-top: 3rem;
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
+
+  background: $light-grey;
+  > h2 {
+    font-size: 2.8rem;
+    font-weight: lighter;
+    font-family: 'shrikhand';
+  }
+  @include medium {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+.menu {
+  padding: 3.2rem 2.2rem;
+  background: $light-grey;
+  @include medium {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-  
-    border-top-right-radius: 4rem;
-    border-top-left-radius: 4rem;
-  
-    padding-top: 3rem;
-    padding-left: 2.2rem;
-    padding-right: 2.2rem;
-  
-    background: $light-grey;
-    > h2 {
-      font-size: 2.8rem;
-      font-weight: lighter;
-      font-family: 'shrikhand';
-    }
-    @include medium {
-      padding-left: 4rem;
-      padding-right: 4rem;
-    }
+    gap: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
-  .menu {
-    padding: 3.2rem 2.2rem;
-    background: $light-grey;
-    @include medium {
-      display: flex;
-      justify-content: space-between;
-      gap: 4rem;
-      padding-left: 4rem;
-      padding-right: 4rem;
-    }
+}
+.course {
+  min-width: 0; // alowed the check to work nicely
+  @include medium {
+    width: 100%;
   }
-  .course {
-    min-width: 0; // alowed the check to work nicely
-    @include medium {
-      width: 100%;
-    }
-    > h3 {
-      font-size: 1.6rem;
-      font-weight: lighter;
-      text-transform: uppercase;
-    }
-    > h3::after {
-      content: '';
-      display: block;
-      width: 30px;
-      height: 3px;
-      background: $tertiary-color;
-  
-      margin-top: 0.5rem;
-    }
+  > h3 {
+    font-size: 1.6rem;
+    font-weight: lighter;
+    text-transform: uppercase;
   }
-  .plate {
-    cursor: pointer;
-  
-    display: flex;
+  > h3::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: $tertiary-color;
+
+    margin-top: 0.5rem;
+  }
+}
+.plate {
+  cursor: pointer;
+
+  display: flex;
+  overflow: hidden;
+
+  background: white;
+
+  border-radius: 1.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+
+  padding: 1.2rem;
+  margin: 2rem 0;
+  &__name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
     overflow: hidden;
-  
-    background: white;
-  
-    border-radius: 1.5rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-  
-    padding: 1.2rem;
-    margin: 2rem 0;
-    &__name {
+
+    flex: 1; // div take all space
+    > span {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    > p {
+      font-size: 1.4rem;
+      font-weight: lighter;
+
+      margin-top: 0.5rem;
+
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
-  
-      flex: 1; // div take all space
-      > span {
-        font-size: 1.8rem;
-        font-weight: bold;
-      }
-      > p {
-        font-size: 1.4rem;
-        font-weight: lighter;
-  
-        margin-top: 0.5rem;
-  
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-      }
-    }
-    &__price {
-      font-size: 1.4rem;
-      font-weight: bold;
-  
-      margin-left: 1rem;
-  
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-  
-      position: relative;
-  
-      width: 28px; // init width price to change it on :hover
-      transition: width 500ms;
-    }
-    // green background
-    &__price::before {
-      content: '';
-      background: $tertiary-color;
-      margin-left: 1rem;
-  
-      width: 70px;
-      height: 80px;
-  
-      position: absolute;
-      top: -15px;
-      left: 35px;
-    }
-    // check icone
-    &__price::after {
-      content: '\f058';
-      font-family: 'Font Awesome 6 Free';
-      font-weight: 600;
-      font-size: 2.4rem;
-      color: white;
-  
-      position: absolute;
-      top: 22%;
-      left: 65px;
-  
-      transform: rotate(-540deg);
-      transition: transform 500ms;
-    }
-    &:hover &__price {
-      width: 99px;
-    }
-    &:hover &__price::after {
-      transform: rotate(0deg);
     }
   }
-  .menu__order {
+  &__price {
+    font-size: 1.4rem;
+    font-weight: bold;
+
+    margin-left: 1rem;
+
     display: flex;
-    justify-content: center;
-  
-    background: $light-grey;
-  
-    padding-bottom: 7rem;
-    button {
-      width: 180px;
-    }
+    justify-content: space-between;
+    align-items: flex-end;
+
+    position: relative;
+
+    width: 28px; // init width price to change it on :hover
+    transition: width 500ms;
   }
-  // Loading plates
-  @for $i from 1 to 11 {
-    #case-#{$i} {
-      animation: menu-plate-loading
-        1000ms
-        cubic-bezier(0.175, 0.885, 0.32, 1.275)
-        both;
-      animation-delay: #{calc($i/11)}s;
-    }
+  // green background
+  &__price::before {
+    content: '';
+    background: $tertiary-color;
+    margin-left: 1rem;
+
+    width: 70px;
+    height: 80px;
+
+    position: absolute;
+    top: -15px;
+    left: 35px;
   }
-  
+  // check icone
+  &__price::after {
+    content: '\f058';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: white;
+
+    position: absolute;
+    top: 22%;
+    left: 65px;
+
+    transform: rotate(-540deg);
+    transition: transform 500ms;
+  }
+  &:hover &__price {
+    width: 99px;
+  }
+  &:hover &__price::after {
+    transform: rotate(0deg);
+  }
+}
+.menu__order {
+  display: flex;
+  justify-content: center;
+
+  background: $light-grey;
+
+  padding-bottom: 7rem;
+  button {
+    width: 180px;
+  }
+}
+// Loading plates
+@for $i from 1 to 11 {
+  #case-#{$i} {
+    animation: menu-plate-loading
+      1000ms
+      cubic-bezier(0.175, 0.885, 0.32, 1.275)
+      both;
+    animation-delay: #{calc($i/11)}s;
+  }
+}
