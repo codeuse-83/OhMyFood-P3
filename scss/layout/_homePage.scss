@@ -14,7 +14,7 @@
   text-align: center;
   > p {
     font-weight: bold;
-    color: $dark-grey;
+    color: $dark_grey;
 
     width: 100%;
     padding: 1.5rem 0;
@@ -30,7 +30,7 @@
   display: flex;
   flex-direction: column;
 
-  background: $light-grey;
+  background: $light_grey;
   > h2 {
     margin-top: 3.8rem;
   }
@@ -79,12 +79,12 @@
   border-radius: 2.4rem;
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
 
-  background: $light-grey;
+  background: $light_grey;
   &:hover {
     cursor: pointer;
-    background-color: $secondary-color-transparent;
+    background-color: $secondary_color_transparent;
     > i {
-      color: $secondary-color;
+      color: $secondary_color;
     }
   }
   &__number {
@@ -100,7 +100,7 @@
 
     border-radius: 50%;
 
-    color: $light-grey;
+    color: $light_grey;
     background: $secondary-color;
   }
   > i {
@@ -119,7 +119,7 @@
 
 // ___ SECTION RESTAURANTS ___ //
 .restaurants {
-  background: $light-grey;
+  background: $light_grey;
   padding: 5.8rem 2.2rem;
   > h2 {
     margin-bottom: 2.2rem;
@@ -177,9 +177,9 @@
 
     font-size: 1.4rem;
     font-weight: bold;
-    color: darken($tertiary-color, 35);
+    color: darken($tertiary_color, 35);
 
-    background: $tertiary-color;
+    background: $tertiary_color;
   }
   &__footer {
     display: flex;

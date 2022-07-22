@@ -18,7 +18,7 @@
 }
 
 // loading bar
-@mixin loadingBar ($color) {
+@mixin loadingSpinner ($color) {
     width: 50px;
     height: 100px;
     border-radius: 5rem;

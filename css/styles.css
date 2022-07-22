@@ -674,10 +674,12 @@ footer {
   background: #353535;
   color: white;
   padding: 2.2rem;
+  
 }
 footer > p {
   font-family: "shrikhand";
   font-size: 1.8rem;
+  
 }
 footer > ul {
   margin-top: 2.2rem;

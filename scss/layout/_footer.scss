@@ -1,6 +1,6 @@
 footer {
   width: 100%;
-  background: $dark-grey;
+  background: $dark_grey;
   color: white;
   padding: 2.2rem;
   > p {
@@ -26,9 +26,9 @@ footer {
     color: white;
   }
   li:hover {
-    color: $secondary-color;
+    color: $secondary_color;
     a {
-      color: $secondary-color;
+      color: $secondary_color;
     }
   }
   @include large {
